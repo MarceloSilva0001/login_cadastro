@@ -1,5 +1,6 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 body{
     background-image: linear-gradient(45deg,rgb(18, 239, 255), rgb(37, 101, 109));
@@ -10,5 +11,61 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-   background-color: rgb(111, 111, 199);
+   background-color: rgba(6, 6, 59, 0.315);
+   padding: 15px;
+   border-radius: 10px;
+}
+fieldset{
+    border: 2px solid rgb(153, 21, 21);
+}
+legend{
+    background-color: rgb(153, 21, 21);
+    color: rgba(255, 255, 255, 0.904);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput,.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 15px;
+    color: rgb(36, 14, 161);
+}
+.Datanasc{
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+#submit{
+    background-image: linear-gradient(45deg,rgb(37, 101, 109), rgb(18, 239, 255));
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+}
+#submit:hover{
+    transition: 21s;
+    background-image: linear-gradient(45deg,rgb(18, 239, 255), rgb(37, 101, 109));
 }

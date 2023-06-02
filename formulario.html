@@ -12,44 +12,47 @@
         <form action="">
             <fieldset><legend><b>Formulario</b></legend>
 
-            <div class="inputBox"> <br> <br>
+            <div class="inputBox"> 
                 <input type="text" name="nome" id="nome" class="inputUser" required>
-                <label for="nome">Nome Completo</label>
-            </div>
-            <div class="inputBox"> <br> <br>
-                <input type="email" name="email" id="email" class="inputEmail" required>
-                <label for="nome">Email</label>
-            </div>
-            <div class="inputBox"> <br> <br>
-                <input type="tel" name="tel" id="tel" class="inputTel" required>
-                <label for="nome">Celular</label>
-            </div>
-            <div class="inputBox"> <br> <br>
+                <label class="labelInput" for="nome">Nome</label>
+            </div><br><br>
+            <div class="inputBox"> 
+                <input type="text" name="email" id="email" class="inputUser" required>
+                <label class="labelInput" for="nome">Email</label>
+            </div><br><br>
+            <div class="inputBox"> 
+                <input type="tel" name="tel" id="tel" class="inputUser" required>
+                <label class="labelInput" for="nome">Celular</label>
+            </div><br>
+            <div class="inputBox">
                 <p>sexo:</p>
-                <label for="masculino">Masculino</label>
                 <input type="radio" name="sexo" id="masculino" required value="masculino">
-                <label for="feminino">Feminino</label>
+                <label for="masculino">Masculino</label><br>
+                
                 <input type="radio" name="sexo" id="feminino" required value="feminino">
-                <label for="outros">Outros</label>
+                <label for="feminino">Feminino</label><br>
+                
                 <input type="radio" name="sexo" id="outros" required value="outros">
+                <label for="outros">Outros</label>
+                
             </div>
             <div class="inputBox"> <br> <br>
                 <label for="Datanasc">Data de Nascimento</label>
-                <input type="date" name="Datanasc" id="Datanasc" required>
-            </div>
-            <div class="inputBox"> <br> <br>
-                <input type="text" name="cidade" id="cidade" class="inputcidade" required>
-                <label for="nome">cidade</label>
-            </div>
-            <div class="inputBox"> <br> <br>
-                <input type="text" name="estado" id="estado" class="inputEstado" required>
-                <label for="nome">estado</label>
-            </div>
-            <div class="inputBox"> <br> <br>
-                <input type="text" name="endereco" id="endereco" class="inputEndereco" required>
-                <label for="nome">endereço</label>
+                <input class="Datanasc" type="date" name="Datanasc" id="Datanasc" required>
+            </div><br>
+            <div class="inputBox"> 
+                <input class="inputUser" type="text" name="cidade" id="cidade" class="inputcidade" required>
+                <label class="labelInput" for="nome">cidade</label>
+            </div><br> <br>
+            <div class="inputBox"> 
+                <input class="inputUser" type="text" name="estado" id="estado" class="inputEstado" required>
+                <label class="labelInput" for="nome">estado</label>
+            </div><br> <br>
+            <div class="inputBox"> 
+                <input class="inputUser" type="text" name="endereco" id="endereco" class="inputEndereco" required>
+                <label class="labelInput" for="nome">endereço</label>
             </div> <br>
-            <input type="submit" value="Enviar">
+            <input type="submit" id="submit" value="Enviar">
             </fieldset>
             
         </form>
